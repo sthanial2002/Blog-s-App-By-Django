@@ -1,0 +1,25 @@
+{% extends 'layouts/base.html '%}
+
+{% block title %}
+    Tutoriel de Django | Blog - Article #{{post.id}}
+{% endblock %}
+
+{% block content %}
+
+    <div class="panel panel-primary">
+
+        <div class="panel-heading">
+                <h3 class="panel-title">
+                <a href="{% url 'blog:show' post.id %}"> 
+                    Détails du post #{{ post.id}}  
+                </a>
+                </h3>
+        </div>
+
+        <div class="panel-body">
+            <p> {{ post.body}}</p>
+        </div>
+    </div>
+
+    Retour vers <a href="{% url 'blog:index' %}">Liste des articles</a>
+{% endblock %}
