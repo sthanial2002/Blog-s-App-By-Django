@@ -8,7 +8,7 @@ TEMPLATE_DEBUG = False
 
 DATABASES['default'] = dj_database_url.config()
 
-SECRET_KEY = get_env_variable()
+SECRET_KEY = get_env_variable('SECRET_KEY')
 
 ALLOWED_HOSTS = [
 'easy-blog-django.herokuapp.com', 
