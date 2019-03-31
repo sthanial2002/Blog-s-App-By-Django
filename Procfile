@@ -1,1 +1,1 @@
-web:gunicorn tutoriel_django.wsgi --log-file -
+web: gunicorn tutoriel_django.wsgi --log-file -
