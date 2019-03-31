@@ -27,8 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-
-
 ]
 
 
@@ -44,7 +42,7 @@ INSTALLED_APPS = [
 
     'django_extensions',
     'debug_toolbar',
-    'django-bootstrap3'
+    'bootstrap3',
 
     'blog.apps.BlogConfig',
     
@@ -59,7 +57,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    'debug_toolbar.middleware.DebugToolbarMiddleware'
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 
 
 ]
