@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
     'django_extensions',
     'debug_toolbar',
+    'django-bootstrap3'
 
     'blog.apps.BlogConfig',
     
