@@ -1,1 +1,0 @@
-# easy-blog-django
