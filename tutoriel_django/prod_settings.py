@@ -4,7 +4,7 @@ import dj_database_url
 
 DEBUG = True
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
 DATABASES['default'] = dj_database_url.config()
 
