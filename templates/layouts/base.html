@@ -27,7 +27,7 @@
             {% block content %} {% endblock %}
         </div>
 
-        {% if request.get_full_path == "" %}
+        {% if request.get_full_path == "/" %}
             <div class="row">
                 {% include 'layouts/partials/_footer.html' %}
             </div>
