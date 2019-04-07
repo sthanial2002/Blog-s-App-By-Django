@@ -6,7 +6,7 @@ def index(request):
 def contact(request):
     return render(request, 'contact.html')
 
-def handler404(request,exception):
+def handler404(request,exception=None):
    return render(request, 'errors/404.html', {'error':exception}, status=404)
 
 
