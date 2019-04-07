@@ -1,13 +1,12 @@
 {% extends 'layouts/base.html' %}
 
+{% load static %}
+
 {% block title %}
     Tutoriel de Django | Blog - Tous les articles
 {% endblock %}
 
-{% load static %}
-
 {% block content %}
-    <h1>Nous avons {{ posts|length }} articles</h1>
     {% for post in posts %}
 
         <div class="panel panel-primary">
