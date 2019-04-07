@@ -11,7 +11,7 @@ def index(request):
      page = request.GET.get('page')
      posts = paginator.get_page(page)
 
-     return render(request, 'blog/index.html',{'posts':posts})
+     return render(request, 'blog/index.html', {'posts':posts})
 
 def show(request, id):
     post = get_object_or_404(Post, pk=id)
