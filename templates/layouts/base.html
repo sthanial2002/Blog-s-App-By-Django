@@ -26,9 +26,23 @@
         <div class="row">
             {% block content %} {% endblock %}
         </div>
-        <div class="row">
-            {% include 'layouts/partials/_footer.html' %}
-        </div>
+
+        {% if request.get_full_path == "" %}
+            <div class="row">
+                {% include 'layouts/partials/_footer.html' %}
+            </div>
+        
+        {% elif request.get_full_path == "/create" %}
+            <div class="row">
+                {% include 'layouts/partials/_footer.html' %}
+            </div>
+
+        {% else %}
+            <div class="row">
+                {% include 'layouts/partials/_footer_blog.html' %}
+            </div>
+        {% endif %}
+
 
     </div>
 

@@ -35,7 +35,7 @@
         <div>
             <p class="time-slot"> 
                 <time datetime = "{{ post.created_at|date:'d-m-Y' }}">
-                    <span class="glyphicon glyphicon-time"></span>
+                    <i class="glyphicon glyphicon-time"></i>
                     <a class="nav nav-pills  btn btn-primary disabled" href="">
                         {{ post.created_at|timesince }} 
                     </a>
@@ -51,8 +51,8 @@
     <div class="pagination">
     <span class="step-links">
         {% if posts.has_previous %}
-            <a href="?page=1">&laquo; first</a>
-            <a href="?page={{ posts.previous_page_number }}">previous</a>
+            <a href="?page=1">&laquo; Début</a>
+            <a href="?page={{ posts.previous_page_number }}">Précédant</a>
         {% endif %}
 
         <span class="current">
@@ -60,8 +60,8 @@
         </span>
 
         {% if posts.has_next %}
-            <a href="?page={{ posts.next_page_number }}">next</a>
-            <a href="?page={{ posts.paginator.num_pages }}">last &raquo;</a>tm
+            <a href="?page={{ posts.next_page_number }}">Suivant</a>
+            <a href="?page={{ posts.paginator.num_pages }}">Fin &raquo;</a>
         {% endif %}
     </span>
 </div>

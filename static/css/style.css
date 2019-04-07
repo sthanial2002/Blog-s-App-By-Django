@@ -12,3 +12,15 @@ body{
     color: black;
     text-align: center;
   }
+
+  .footer_blog {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #e7e7e7;
+    padding: 10px 10px;
+    color: black;
+    text-align: center;
+  }
+
